@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 50px;
+}
+.share{
+    position: absolute;
+   top: 40px;
+   left: 1500px;
+}
+.share-mobile{
+    display: none;
+}
+.profile-part {
+    position: relative;
+  text-align: center;
+}
+.profile-part #twitter {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.profile-part #slack {
+  display: none;
+}
+.all-buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: 35px 0;
+  gap: 10px;
+}
+.all-buttons a button{
+    background: #eaecf0;
+    border: 1px solid #eaecf0;
+    border-radius: 8px;
+    width: 100%;
+    padding: 24px;  
+    font-size: 18px; 
+}
+.all-buttons a button:hover{
+    background: #bdc0c5;
+    border: 1px solid #eaecf0;
+}
+.icons{
+    text-align: center;
+}
+.icons img {
+    margin: 0 5px;
+}
+.underline{
+    margin: 50px 0 25px 0;
+    width: 100%;
+    border-top: 1px solid #eaecf0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h2 span{
+    color: red;
+    font-size: 30px;
+}
+footer p{
+    color: #667085;
+    font-size: 16px;
+}
+@media(max-width:767px){
+    .share-mobile{
+        display: block;
+    }
+    .all-buttons a button{
+        font-size: 15px;
+    }
+    footer{
+        display: grid;
+        gap:20px;
+    }
+}
