@@ -44,7 +44,7 @@ const PageContainer = () => {
 
   const buttonList = buttonTitles.map((item) => {
     return (
-      <a href={item.url}>
+      <a href={item.url} target="_blank" rel="noreferrer">
         <button id={item.iden}>{item.title}</button>
       </a>
     );
@@ -57,7 +57,7 @@ const PageContainer = () => {
           <div></div>
           <div></div>
           <img src={share} alt="share button" className="share" />
-        <img src={sharemobile} alt="share-mobile" className="share-mobile" />
+          <img src={sharemobile} alt="share-mobile" className="share-mobile" />
         </div>
         <div className="profile-part">
           <img src={Profileimage} alt="profilepic" id="profile__img" />
@@ -67,7 +67,11 @@ const PageContainer = () => {
         <div className="all-buttons">{buttonList}</div>
         <div className="icons">
           <img src={slack} alt="slack-icon" />
-          <a href="https://github.com/Ferrari-coder">
+          <a
+            href="https://github.com/Ferrari-coder"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={github} alt="github-icon" />
           </a>
         </div>
